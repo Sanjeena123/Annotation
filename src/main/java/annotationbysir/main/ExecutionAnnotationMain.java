@@ -31,8 +31,19 @@ public class ExecutionAnnotationMain {
         departments.setDepartName(deptName);
 
         departments.setEmployee(employee);
+        employee.setDepartments(departments);
 
         //store to DB
-        dataSource.storeDataInDatabase(departments);
+       // dataSource.storeDataInDatabase(departments);
+
+
+        //fetch from db
+       dataSource.fetchData();
+       //update to db
+       /* System.out.println("Please enter specific department to update ::");
+        String dName = scanner.next();
+        System.out.println("Please enter dept id for whom want to update ::");
+        int departId = scanner.nextInt();
+        dataSource.updateDepartment(dName, departId);*/
     }
 }

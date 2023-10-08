@@ -28,7 +28,7 @@
 
         <!-- Create : Every time on start of application drop the existing table and re-create
              update : Once table created will never drop even at the time of start of application -->
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- set the current session context -->
         <property name="current_session_context_class">thread</property>
